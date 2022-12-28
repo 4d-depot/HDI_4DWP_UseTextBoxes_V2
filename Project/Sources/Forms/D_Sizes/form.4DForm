@@ -1,0 +1,390 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"events": [],
+	"windowTitle": "New text box settings",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 130,
+					"left": 180,
+					"width": 320,
+					"height": 160,
+					"borderRadius": 10,
+					"stroke": "#808080"
+				},
+				"Line3": {
+					"type": "line",
+					"top": 240,
+					"left": 200,
+					"width": 280,
+					"height": 1,
+					"strokeDashArray": [
+						1,
+						2
+					],
+					"stroke": "#808080"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 240,
+					"left": 10,
+					"width": 160,
+					"height": 1,
+					"strokeDashArray": [
+						1,
+						2
+					],
+					"stroke": "#808080"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 155,
+					"left": 420,
+					"width": 1,
+					"height": 110,
+					"strokeDashArray": [
+						1,
+						2
+					],
+					"stroke": "#808080"
+				},
+				"Line": {
+					"type": "line",
+					"top": 12,
+					"left": 420,
+					"width": 1,
+					"height": 107,
+					"strokeDashArray": [
+						1,
+						2
+					],
+					"stroke": "#808080"
+				},
+				"Pop2": {
+					"type": "dropdown",
+					"left": 60,
+					"top": 230,
+					"width": 80,
+					"height": 20,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.offsetX",
+					"focusable": false
+				},
+				"Pop1": {
+					"type": "dropdown",
+					"left": 380,
+					"top": 79,
+					"width": 80,
+					"height": 20,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.offsetY",
+					"focusable": false
+				},
+				"Pop4": {
+					"type": "dropdown",
+					"left": 380,
+					"top": 170,
+					"width": 80,
+					"height": 20,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.height",
+					"focusable": false
+				},
+				"Pop3": {
+					"type": "dropdown",
+					"left": 270,
+					"top": 230,
+					"width": 80,
+					"height": 20,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.width",
+					"focusable": false
+				},
+				"Button": {
+					"type": "button",
+					"top": 360,
+					"left": 370,
+					"width": 70,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancel",
+					"events": [
+						"onClick"
+					],
+					"focusable": false
+				},
+				"Button1": {
+					"type": "button",
+					"top": 360,
+					"left": 450,
+					"width": 70,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					],
+					"focusable": false
+				},
+				"Text": {
+					"type": "text",
+					"text": "Vertical offset:",
+					"top": 82,
+					"left": 252,
+					"width": 118,
+					"height": 16,
+					"textAlign": "right"
+				},
+				"Text1": {
+					"type": "text",
+					"text": "Horizontal offset:",
+					"top": 210,
+					"left": 0,
+					"width": 120,
+					"height": 16,
+					"textAlign": "right"
+				},
+				"Text2": {
+					"type": "text",
+					"text": "Text box height:",
+					"top": 172,
+					"left": 250,
+					"width": 120,
+					"height": 16,
+					"textAlign": "right"
+				},
+				"Text3": {
+					"type": "text",
+					"text": "Text box width:",
+					"top": 210,
+					"left": 210,
+					"width": 120,
+					"height": 16,
+					"textAlign": "right"
+				},
+				"Static Picture2": {
+					"type": "picture",
+					"top": 14,
+					"left": 10,
+					"width": 160,
+					"height": 103,
+					"picture": "/RESOURCES/Images/EnveloppeIcon.png",
+					"pictureFormat": "scaled"
+				},
+				"Line4": {
+					"type": "line",
+					"top": 130,
+					"left": 200,
+					"width": 1,
+					"height": 210,
+					"strokeDashArray": [
+						6,
+						2
+					],
+					"startPoint": "topLeft",
+					"stroke": "#b1c4dd"
+				},
+				"Pop5": {
+					"type": "dropdown",
+					"left": 210,
+					"top": 320,
+					"width": 80,
+					"height": 20,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.padding",
+					"focusable": false
+				},
+				"Text4": {
+					"type": "text",
+					"text": "Padding:",
+					"top": 300,
+					"left": 150,
+					"width": 120,
+					"height": 16,
+					"textAlign": "right"
+				},
+				"Line5": {
+					"type": "line",
+					"top": 150,
+					"left": 180,
+					"width": 320,
+					"height": 1,
+					"strokeDashArray": [
+						6,
+						2
+					],
+					"startPoint": "topLeft",
+					"stroke": "#b1c4dd"
+				},
+				"Static Picture1": {
+					"type": "picture",
+					"top": 120,
+					"left": 416,
+					"width": 10,
+					"height": 10,
+					"picture": "Images/ArrowBottom.png"
+				},
+				"Static Picture3": {
+					"type": "picture",
+					"top": 0,
+					"left": 416,
+					"width": 10,
+					"height": 10,
+					"picture": "Images/ArrowTop.png"
+				},
+				"Line6": {
+					"type": "line",
+					"top": 270,
+					"left": 180,
+					"width": 320,
+					"height": 1,
+					"strokeDashArray": [
+						6,
+						2
+					],
+					"startPoint": "topLeft",
+					"stroke": "#b1c4dd"
+				},
+				"Line7": {
+					"type": "line",
+					"top": 130,
+					"left": 480,
+					"width": 1,
+					"height": 160,
+					"strokeDashArray": [
+						6,
+						2
+					],
+					"startPoint": "topLeft",
+					"stroke": "#b1c4dd"
+				},
+				"Static Picture4": {
+					"type": "picture",
+					"top": 260,
+					"left": 416,
+					"width": 10,
+					"height": 10,
+					"picture": "Images/ArrowBottom.png"
+				},
+				"Static Picture5": {
+					"type": "picture",
+					"top": 150,
+					"left": 416,
+					"width": 10,
+					"height": 10,
+					"picture": "Images/ArrowTop.png"
+				},
+				"Static Picture6": {
+					"type": "picture",
+					"top": 235,
+					"left": 200,
+					"width": 10,
+					"height": 10,
+					"picture": "Images/ArrowLeft.png"
+				},
+				"Static Picture7": {
+					"type": "picture",
+					"top": 235,
+					"left": 470,
+					"width": 10,
+					"height": 10,
+					"picture": "Images/ArrowRight.png"
+				},
+				"Static Picture8": {
+					"type": "picture",
+					"top": 235,
+					"left": 0,
+					"width": 10,
+					"height": 10,
+					"picture": "Images/ArrowLeft.png"
+				},
+				"Static Picture9": {
+					"type": "picture",
+					"top": 235,
+					"left": 170,
+					"width": 10,
+					"height": 10,
+					"picture": "Images/ArrowRight.png"
+				},
+				"Line8": {
+					"type": "line",
+					"top": 330,
+					"left": 150,
+					"width": 40,
+					"height": 1,
+					"strokeDashArray": [
+						1,
+						2
+					],
+					"stroke": "#696969"
+				},
+				"Static Picture10": {
+					"type": "picture",
+					"top": 325,
+					"left": 190,
+					"width": 10,
+					"height": 10,
+					"picture": "Images/ArrowRight.png"
+				},
+				"Text5": {
+					"type": "text",
+					"text": "Define your settings…",
+					"top": 30,
+					"left": 170,
+					"width": 238,
+					"height": 16,
+					"fontWeight": "bold",
+					"fontStyle": "italic",
+					"stroke": "#6495ed",
+					"fontSize": 18,
+					"textAlign": "center"
+				}
+			}
+		}
+	],
+	"geometryStamp": 1093,
+	"width": 540,
+	"height": 400,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"method": "method.4dm"
+}

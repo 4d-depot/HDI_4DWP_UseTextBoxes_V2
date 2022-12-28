@@ -1,0 +1,277 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"WParea": {
+					"type": "write",
+					"top": 102,
+					"left": 9,
+					"width": 880,
+					"height": 590,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "[Templates:4]wp:3",
+					"hideFocusRing": true,
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dpi": 0,
+					"borderStyle": "none",
+					"method": "ObjectMethods/WParea.4dm",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onSelectionChange",
+						"onAfterEdit"
+					]
+				},
+				"WPtoolbar": {
+					"type": "subform",
+					"top": 12,
+					"left": 9,
+					"width": 880,
+					"height": 90,
+					"sizingX": "grow",
+					"detailForm": "WP_Toolbar",
+					"focusable": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable"
+				},
+				"Button": {
+					"type": "button",
+					"top": 712,
+					"left": 739,
+					"width": 70,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancel",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 712,
+					"left": 819,
+					"width": 70,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Input": {
+					"type": "input",
+					"left": 110,
+					"top": 715,
+					"width": 251,
+					"height": 17,
+					"dataSource": "[Templates:4]name:2",
+					"sizingY": "move"
+				},
+				"Text": {
+					"type": "text",
+					"text": "Name:",
+					"top": 716,
+					"left": 9,
+					"width": 91,
+					"height": 16,
+					"textAlign": "right",
+					"sizingY": "move"
+				},
+				"Button2": {
+					"type": "button",
+					"text": "Rnd people",
+					"top": 714,
+					"left": 386,
+					"width": 115,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button2.4dm",
+					"sizingY": "move",
+					"focusable": false
+				},
+				"Button3": {
+					"type": "button",
+					"text": "New T.A.",
+					"top": 102,
+					"left": 945,
+					"width": 158,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button3.4dm",
+					"sizingX": "move"
+				},
+				"Button4": {
+					"type": "button",
+					"text": "Get Attributes",
+					"top": 139,
+					"left": 945,
+					"width": 158,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button4.4dm",
+					"sizingX": "move"
+				},
+				"Input1": {
+					"type": "input",
+					"left": 1000,
+					"top": 184,
+					"width": 104,
+					"height": 14,
+					"dataSource": "Form:C1466.radius",
+					"fontTheme": "additional",
+					"fontSize": 10
+				},
+				"Input2": {
+					"type": "input",
+					"left": 1000,
+					"top": 201,
+					"width": 104,
+					"height": 14,
+					"dataSource": "Form:C1466.style",
+					"fontTheme": "additional",
+					"fontSize": 10
+				},
+				"Input3": {
+					"type": "input",
+					"left": 1000,
+					"top": 218,
+					"width": 104,
+					"height": 14,
+					"dataSource": "Form:C1466.width",
+					"fontTheme": "normal",
+					"fontSize": 10
+				},
+				"Button5": {
+					"type": "button",
+					"text": "Set Attributes",
+					"top": 286,
+					"left": 947,
+					"width": 158,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button5.4dm",
+					"sizingX": "move"
+				},
+				"Button6": {
+					"type": "button",
+					"text": "Set Attributes to selection",
+					"top": 415,
+					"left": 933,
+					"width": 172,
+					"height": 65,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button6.4dm",
+					"sizingX": "move"
+				},
+				"Text1": {
+					"type": "text",
+					"text": "Radius\rStyle\rWidth\rmargin\rPadding",
+					"top": 184,
+					"left": 909,
+					"width": 76,
+					"height": 116
+				},
+				"Input4": {
+					"type": "input",
+					"left": 1000,
+					"top": 235,
+					"width": 104,
+					"height": 14,
+					"dataSource": "Form:C1466.margin",
+					"fontTheme": "normal",
+					"fontSize": 10
+				},
+				"Input5": {
+					"type": "input",
+					"left": 1000,
+					"top": 252,
+					"width": 104,
+					"height": 14,
+					"dataSource": "Form:C1466.padding",
+					"fontTheme": "normal",
+					"fontSize": 10
+				},
+				"Button7": {
+					"type": "button",
+					"text": "Get Attributes",
+					"top": 385,
+					"left": 933,
+					"width": 171,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button7.4dm",
+					"sizingX": "move"
+				}
+			}
+		}
+	],
+	"geometryStamp": 133,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}
