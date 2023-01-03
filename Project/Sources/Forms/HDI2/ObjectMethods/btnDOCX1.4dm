@@ -12,7 +12,7 @@ If ($file.exists)
 		: (Form:C1466.tbTextInLine)
 			$o.anchoredTextAreas:="inline"  // textboxes are imported (once) as inline text
 		: (Form:C1466.tbAsTextBoxes)
-			$o.anchoredTextAreas:="textbox"  // textboxes are imported as textboxes
+			$o.anchoredTextAreas:="anchored"  // textboxes are imported as textboxes
 	End case 
 	
 	WParea2:=WP Import document:C1318($file.platformPath; $o)
