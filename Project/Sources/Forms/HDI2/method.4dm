@@ -22,9 +22,13 @@ Case of
 		
 		Form:C1466.trace:=False:C215
 		
-		Form:C1466.tbIgnore:=True:C214
+		Form:C1466.tbIgnoreImport:=True:C214
 		Form:C1466.tbTextInLine:=False:C215
 		Form:C1466.tbAsTextBoxes:=False:C215
+		
+		Form:C1466.tbExport:=True:C214
+		Form:C1466.tbIgnoreExport:=False:C215
+		
 		
 	: (Form event code:C388=On Timer:K2:25)
 		
