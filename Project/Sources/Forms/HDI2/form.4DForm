@@ -85,12 +85,22 @@
 					"enterable": true,
 					"focusable": false
 				},
+				"Static Picture1": {
+					"type": "picture",
+					"top": 954,
+					"left": 995,
+					"width": 50,
+					"height": 50,
+					"picture": "/RESOURCES/Images/new.png",
+					"pictureFormat": "scaled",
+					"sizingX": "move"
+				},
 				"WParea1": {
 					"type": "write",
 					"top": 70,
 					"left": 60,
 					"width": 1070,
-					"height": 140,
+					"height": 160,
 					"sizingX": "grow",
 					"sizingY": "fixed",
 					"dataSource": "WParea1",
@@ -108,10 +118,10 @@
 				},
 				"WPmailing": {
 					"type": "write",
-					"top": 240,
+					"top": 260,
 					"left": 60,
 					"width": 780,
-					"height": 420,
+					"height": 500,
 					"sizingX": "grow",
 					"sizingY": "grow",
 					"dataSource": "WParea2",
@@ -130,7 +140,7 @@
 				"LB": {
 					"type": "listbox",
 					"left": 860,
-					"top": 240,
+					"top": 260,
 					"width": 270,
 					"height": 520,
 					"events": [
@@ -175,9 +185,9 @@
 				},
 				"btnHTML": {
 					"type": "button",
-					"top": 760,
-					"left": 60,
-					"width": 150,
+					"top": 800,
+					"left": 320,
+					"width": 140,
 					"height": 20,
 					"sizingY": "move",
 					"text": "Export to HTML…",
@@ -185,14 +195,13 @@
 					"method": "ObjectMethods/btnHTML.4dm",
 					"events": [
 						"onClick"
-					],
-					"sizingX": "fixed"
+					]
 				},
 				"btnPDF": {
 					"type": "button",
-					"top": 690,
+					"top": 800,
 					"left": 60,
-					"width": 150,
+					"width": 120,
 					"height": 20,
 					"sizingY": "move",
 					"text": "Export to PDF",
@@ -200,14 +209,13 @@
 					"method": "ObjectMethods/btnPDF.4dm",
 					"events": [
 						"onClick"
-					],
-					"sizingX": "fixed"
+					]
 				},
 				"btnSVG": {
 					"type": "button",
-					"top": 725,
-					"left": 60,
-					"width": 150,
+					"top": 800,
+					"left": 190,
+					"width": 120,
 					"height": 20,
 					"sizingY": "move",
 					"text": "Export to SVG",
@@ -215,232 +223,63 @@
 					"method": "ObjectMethods/btnSVG.4dm",
 					"events": [
 						"onClick"
-					],
-					"sizingX": "fixed"
-				},
-				"btnDOCX": {
-					"type": "button",
-					"top": 690,
-					"left": 260,
-					"width": 140,
-					"height": 20,
-					"sizingY": "move",
-					"text": "Export to Docx",
-					"focusable": false,
-					"method": "ObjectMethods/btnDOCX.4dm",
-					"events": [
-						"onClick"
-					],
-					"sizingX": "fixed"
+					]
 				},
 				"Radio Button": {
 					"type": "radio",
 					"text": "Display formulas",
-					"top": 742,
+					"top": 784,
 					"left": 680,
 					"width": 160,
-					"height": 16,
+					"height": 20,
 					"events": [
 						"onClick"
 					],
 					"dataSource": "Form:C1466.displayFormulas",
 					"method": "ObjectMethods/Radio Button.4dm",
-					"radioGroup": "GR_formulas",
-					"sizingX": "move",
-					"sizingY": "move"
+					"radioGroup": "GR_formulas"
 				},
 				"Radio Button1": {
 					"type": "radio",
 					"text": "Display values",
-					"top": 762,
+					"top": 804,
 					"left": 680,
 					"width": 160,
-					"height": 16,
+					"height": 20,
 					"events": [
 						"onClick"
 					],
 					"dataSource": "Form:C1466.displayValues",
 					"method": "ObjectMethods/Radio Button1.4dm",
-					"radioGroup": "GR_formulas",
-					"sizingX": "move",
-					"sizingY": "move"
+					"radioGroup": "GR_formulas"
 				},
 				"Radio Button2": {
 					"type": "radio",
 					"text": "Page mode",
-					"top": 682,
-					"left": 680,
+					"top": 784,
+					"left": 500,
 					"width": 160,
-					"height": 16,
+					"height": 20,
 					"events": [
 						"onClick"
 					],
 					"dataSource": "Form:C1466.modePage",
 					"method": "ObjectMethods/Radio Button2.4dm",
-					"radioGroup": "GR_pageMode",
-					"sizingX": "move",
-					"sizingY": "move"
+					"radioGroup": "GR_pageMode"
 				},
 				"Radio Button3": {
 					"type": "radio",
 					"text": "Embedded mode",
-					"top": 702,
-					"left": 680,
+					"top": 804,
+					"left": 500,
 					"width": 160,
-					"height": 16,
+					"height": 20,
 					"events": [
 						"onClick"
 					],
 					"dataSource": "Form:C1466.modeEmbedded",
 					"method": "ObjectMethods/Radio Button3.4dm",
-					"radioGroup": "GR_pageMode",
-					"sizingX": "move",
-					"sizingY": "move"
-				},
-				"btnDOCX1": {
-					"type": "button",
-					"top": 760,
-					"left": 260,
-					"width": 140,
-					"height": 20,
-					"sizingY": "move",
-					"text": "Import from Docx",
-					"focusable": false,
-					"method": "ObjectMethods/btnDOCX1.4dm",
-					"events": [
-						"onClick"
-					],
-					"sizingX": "fixed"
-				},
-				"Static Picture1": {
-					"type": "picture",
-					"top": 682,
-					"left": 240,
-					"width": 32,
-					"height": 32,
-					"picture": "/RESOURCES/Images/new.png",
-					"pictureFormat": "scaled",
-					"sizingX": "fixed",
-					"sizingY": "move"
-				},
-				"Line": {
-					"type": "line",
-					"top": 730,
-					"left": 700,
-					"width": 140,
-					"height": 1,
-					"sizingX": "move",
-					"sizingY": "move"
-				},
-				"Radio Button4": {
-					"type": "radio",
-					"text": "Ignore text boxes",
-					"top": 742,
-					"left": 420,
-					"width": 200,
-					"height": 16,
-					"events": [
-						"onClick"
-					],
-					"dataSource": "Form:C1466.tbIgnoreImport",
-					"radioGroup": "textBoxesImport",
-					"sizingX": "fixed",
-					"sizingY": "move"
-				},
-				"Radio Button5": {
-					"type": "radio",
-					"text": "Import as inline text",
-					"top": 762,
-					"left": 420,
-					"width": 200,
-					"height": 16,
-					"events": [
-						"onClick"
-					],
-					"dataSource": "Form:C1466.tbTextInLine",
-					"radioGroup": "textBoxesImport",
-					"sizingX": "fixed",
-					"sizingY": "move"
-				},
-				"Radio Button6": {
-					"type": "radio",
-					"text": "Import as text boxes",
-					"top": 782,
-					"left": 420,
-					"width": 200,
-					"height": 16,
-					"events": [
-						"onClick"
-					],
-					"dataSource": "Form:C1466.tbAsTextBoxes",
-					"radioGroup": "textBoxesImport",
-					"sizingX": "fixed",
-					"sizingY": "move"
-				},
-				"btnDOCX2": {
-					"type": "button",
-					"top": 802,
-					"left": 860,
-					"width": 150,
-					"height": 20,
-					"sizingY": "move",
-					"text": "Reset sample",
-					"focusable": false,
-					"method": "ObjectMethods/btnDOCX2.4dm",
-					"events": [
-						"onClick"
-					],
-					"sizingX": "move"
-				},
-				"Radio Button7": {
-					"type": "radio",
-					"text": "Ignore text boxes  (*)",
-					"top": 702,
-					"left": 420,
-					"width": 200,
-					"height": 16,
-					"events": [
-						"onClick"
-					],
-					"dataSource": "Form:C1466.tbIgnoreExport",
-					"radioGroup": "textBoxesExport",
-					"sizingX": "fixed",
-					"sizingY": "move"
-				},
-				"Radio Button8": {
-					"type": "radio",
-					"text": "Export textboxes",
-					"top": 682,
-					"left": 420,
-					"width": 200,
-					"height": 16,
-					"events": [
-						"onClick"
-					],
-					"dataSource": "Form:C1466.tbExport",
-					"radioGroup": "textBoxesExport",
-					"sizingX": "fixed",
-					"sizingY": "move"
-				},
-				"Static Picture3": {
-					"type": "picture",
-					"top": 780,
-					"left": 573,
-					"width": 24,
-					"height": 24,
-					"picture": "/RESOURCES/Images/new.png",
-					"pictureFormat": "scaled",
-					"sizingX": "fixed",
-					"sizingY": "move"
-				},
-				"Text": {
-					"type": "text",
-					"text": "(*) This option is based on \"wk visible background\" value.",
-					"top": 813,
-					"left": 441,
-					"width": 404,
-					"height": 20,
-					"fontStyle": "italic"
+					"radioGroup": "GR_pageMode"
 				}
 			}
 		},
@@ -635,13 +474,281 @@
 					"sizingX": "move"
 				}
 			}
+		},
+		{
+			"objects": {
+				"Zone de groupe": {
+					"type": "groupBox",
+					"text": "Export to docx",
+					"top": 680,
+					"left": 60,
+					"width": 380,
+					"height": 140,
+					"sizingY": "move"
+				},
+				"btnTrace2": {
+					"type": "checkbox",
+					"text": "Trace code",
+					"top": 800,
+					"left": 1030,
+					"width": 120,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.trace",
+					"sizingX": "move",
+					"sizingY": "move",
+					"enterable": true,
+					"focusable": false
+				},
+				"WParea4": {
+					"type": "write",
+					"top": 70,
+					"left": 60,
+					"width": 1070,
+					"height": 140,
+					"sizingX": "grow",
+					"sizingY": "fixed",
+					"dataSource": "WParea1",
+					"enterable": false,
+					"focusable": false,
+					"hideFocusRing": true,
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"showSelection": true,
+					"showHorizontalRuler": false,
+					"showVerticalRuler": false,
+					"layoutMode": "embedded",
+					"borderStyle": "none",
+					"events": []
+				},
+				"WPmailing2": {
+					"type": "write",
+					"top": 240,
+					"left": 60,
+					"width": 780,
+					"height": 420,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "WParea2",
+					"enterable": true,
+					"focusable": true,
+					"hideFocusRing": true,
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"showSelection": true,
+					"showHorizontalRuler": false,
+					"showVerticalRuler": false,
+					"layoutMode": "page",
+					"borderStyle": "none",
+					"events": []
+				},
+				"LB2": {
+					"type": "listbox",
+					"left": 860,
+					"top": 240,
+					"width": 270,
+					"height": 520,
+					"events": [
+						"onSelectionChange"
+					],
+					"dataSource": "Form:C1466.people",
+					"listboxType": "collection",
+					"verticalLineStroke": "transparent",
+					"currentItemSource": "Form:C1466.currentPeople",
+					"method": "ObjectMethods/LB2.4dm",
+					"scrollbarHorizontal": "hidden",
+					"headerHeight": "21px",
+					"rowHeight": "20px",
+					"selectionMode": "single",
+					"sizingX": "move",
+					"sizingY": "grow",
+					"columns": [
+						{
+							"header": {
+								"text": "Lastname",
+								"name": "Header5"
+							},
+							"name": "Column5",
+							"footer": {
+								"name": "Footer5"
+							},
+							"dataSource": "This:C1470.lastname"
+						},
+						{
+							"header": {
+								"name": "Header6",
+								"text": "City"
+							},
+							"name": "Column6",
+							"footer": {
+								"name": "Footer6"
+							},
+							"dataSource": "This:C1470.city",
+							"width": 120
+						}
+					]
+				},
+				"btnDOCX4": {
+					"type": "button",
+					"top": 780,
+					"left": 300,
+					"width": 120,
+					"height": 20,
+					"sizingY": "move",
+					"text": "Export",
+					"focusable": false,
+					"method": "ObjectMethods/btnDOCX4.4dm",
+					"events": [
+						"onClick"
+					],
+					"sizingX": "fixed"
+				},
+				"btnDOCX6": {
+					"type": "button",
+					"top": 800,
+					"left": 860,
+					"width": 120,
+					"height": 20,
+					"sizingY": "move",
+					"text": "Reset sample",
+					"focusable": false,
+					"method": "ObjectMethods/btnDOCX6.4dm",
+					"events": [
+						"onClick"
+					],
+					"sizingX": "fixed"
+				},
+				"Zone de groupe1": {
+					"type": "groupBox",
+					"text": "Import fom docx",
+					"top": 680,
+					"left": 460,
+					"width": 380,
+					"height": 140,
+					"sizingY": "move"
+				},
+				"Radio Button16": {
+					"type": "radio",
+					"text": "Ignore background and text boxes",
+					"top": 732,
+					"left": 80,
+					"width": 340,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.tbIgnoreExport",
+					"radioGroup": "textBoxesExport",
+					"sizingX": "fixed",
+					"sizingY": "move"
+				},
+				"Radio Button17": {
+					"type": "radio",
+					"text": "Export text boxes",
+					"top": 710,
+					"left": 80,
+					"width": 340,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.tbExport",
+					"radioGroup": "textBoxesExport",
+					"sizingX": "fixed",
+					"sizingY": "move"
+				},
+				"Radio Button13": {
+					"type": "radio",
+					"text": "Ignore text boxes",
+					"top": 754,
+					"left": 480,
+					"width": 340,
+					"height": 16,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.tbIgnoreImport",
+					"radioGroup": "textBoxesImport",
+					"sizingX": "fixed",
+					"sizingY": "move"
+				},
+				"Radio Button14": {
+					"type": "radio",
+					"text": "Import as inline text",
+					"top": 732,
+					"left": 480,
+					"width": 340,
+					"height": 16,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.tbTextInLine",
+					"radioGroup": "textBoxesImport",
+					"sizingX": "fixed",
+					"sizingY": "move"
+				},
+				"Radio Button15": {
+					"type": "radio",
+					"text": "Import as text boxes",
+					"top": 712,
+					"left": 480,
+					"width": 340,
+					"height": 16,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.tbAsTextBoxes",
+					"radioGroup": "textBoxesImport",
+					"sizingX": "fixed",
+					"sizingY": "move"
+				},
+				"btnDOCX5": {
+					"type": "button",
+					"top": 780,
+					"left": 700,
+					"width": 120,
+					"height": 20,
+					"sizingY": "move",
+					"text": "Import",
+					"focusable": false,
+					"method": "ObjectMethods/btnDOCX5.4dm",
+					"events": [
+						"onClick"
+					],
+					"sizingX": "fixed"
+				},
+				"Static Picture5": {
+					"type": "picture",
+					"top": 708,
+					"left": 641,
+					"width": 24,
+					"height": 24,
+					"picture": "/RESOURCES/Images/new.png",
+					"pictureFormat": "scaled",
+					"sizingX": "fixed",
+					"sizingY": "move"
+				},
+				"Static Picture4": {
+					"type": "picture",
+					"top": 708,
+					"left": 224,
+					"width": 24,
+					"height": 24,
+					"picture": "/RESOURCES/Images/new.png",
+					"pictureFormat": "scaled",
+					"sizingX": "fixed",
+					"sizingY": "move"
+				}
+			}
 		}
 	],
 	"$4d": {
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 4804,
+	"geometryStamp": 5132,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

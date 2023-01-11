@@ -27,7 +27,7 @@ Case of
 		$options.blog:="blog.4d.com"
 		$options.info:="4D Write Pro feature"  //ex : "4D View Pro feature"
 		
-		$options.minimumVersion:="1980"  // 1980 means 19R8   1908 means 19.8 (do not use !)
+		$options.minimumVersion:="2000"  // 1980 means 19R8   1908 means 19.8 (do not use !)
 		
 		$options.license:=4D Write license:K44:2  // IF ANY NEEDED
 		

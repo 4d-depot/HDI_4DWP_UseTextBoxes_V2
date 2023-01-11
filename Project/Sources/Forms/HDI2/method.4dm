@@ -22,9 +22,9 @@ Case of
 		
 		Form:C1466.trace:=False:C215
 		
-		Form:C1466.tbIgnoreImport:=True:C214
+		Form:C1466.tbAsTextBoxes:=True:C214
 		Form:C1466.tbTextInLine:=False:C215
-		Form:C1466.tbAsTextBoxes:=False:C215
+		Form:C1466.tbIgnoreImport:=False:C215
 		
 		Form:C1466.tbExport:=True:C214
 		Form:C1466.tbIgnoreExport:=False:C215
