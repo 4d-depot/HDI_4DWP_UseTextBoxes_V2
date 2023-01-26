@@ -7,7 +7,7 @@ End if
 
 
 $options:=New object:C1471
-$options[wk visible background:K81:289]:=Form:C1466.tbExport  // true or false
+$options[wk visible background and anchored elements:K81:289]:=Form:C1466.tbExport  // true or false
 
 $path:=Get 4D folder:C485(Data folder:K5:33)+"export.docx"
 WP EXPORT DOCUMENT:C1337(WParea2; $path; wk docx:K81:277; $options)
