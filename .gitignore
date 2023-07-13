@@ -4,7 +4,6 @@
 .*
 !.git*
 .git/
-.DS_Store
 
 #--------------------------------
 # Ignore data file
@@ -18,6 +17,7 @@
 # Ignore derived data
 #--------------------------------
 Project/DerivedData/
+Libraries/
 
 #--------------------------------
 # Ignore logs
